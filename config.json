@@ -1,0 +1,9 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/Xenapie blogs",
+        "prod_uri": "mysql://root:@localhost/Xenapie blogs",
+        "gmail-user": "dewansh3812.beai23@chitkara.edu.in",
+        "gmail-password": "lm120@pass24"
+    }
+}

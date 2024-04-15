@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('/static/simon-berger-twukN12EN7c-unsplash.jpg'); background-size: cover;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1 style="color: white;">About Me</h1>
+                        <hr class="small">
+                        <span class="subheading"  style="color: white;">I Have A Passion And The World Is My Stage.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Welcome to Xenapie Blogs! I'm thrilled to have you here. I'm Xenapie , the founder, and writer behind this space. Xenapie Blogs is where my passion for bloging comes to life. Through engaging content and insightful discussions, I aim to provide a platform that not only informs but also inspires and connects with readers like you.</p>
+                <p>My journey with bloging started long ago . Since then, it's been a thrilling ride of exploration and discovery, delving deep into world. With Xenapie Blogs, I hope to share my knowledge, experiences, and perspectives, sparking meaningful conversations and fostering a sense of community among fellow enthusiasts.</p>
+                <p>Thank you for being a part of the Xenapie Blogs community. Your support and engagement mean the world to me. Feel free to explore, engage, and reach out—I'd love to connect with you and hear your thoughts.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+   
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="{{ url_for('static', filename='js/jqBootstrapValidation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/contact_me.js') }}"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+{% endblock %}

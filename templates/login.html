@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenapie Blog - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('static/sekiro.jpg');
+			background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: none; /* Remove border */
+            border-radius: 4px;
+            background-color: #f9f9f9; /* Add background color */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d13913;
+        }
+
+        .signin-btn {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .signin-btn a {
+            color: #ff6347;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .signin-btn a:hover {
+            color: #d13913;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login to Your Xenapie Blog Account</h2>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="signin-btn">
+            Don't have an account? <a href="/signup">Sign Up</a>
+        </div>
+    </div>
+
+</body>
+</html>
